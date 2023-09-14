@@ -456,7 +456,7 @@ hr{
 @media only screen and (max-width:414px) {
 
   .greeting{
-    font-size: 30px;
+    font-size: 40px;
   }
   .booknow{
     flex-direction: column;
@@ -466,12 +466,12 @@ hr{
 
   .book_btn{
     margin-top:20px;
-    font-size: 16px ;
+    font-size: 16px;
   }
 
   .hcell{
     height:50vh;
-    padding:0 5%;
+    padding:3% 5%;
   }
   .card_image{
     height:250px;
@@ -487,4 +487,16 @@ hr{
   .contact_list li{
     font-size: 14px;
   }
+}
+
+@media only screen and (max-width:340px) {
+  .greeting{
+    font-size: 30px;
+  }
+
+  .hcell{
+    height:50vh;
+    padding:3% 5%;
+  }
+
 }
