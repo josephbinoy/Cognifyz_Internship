@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400;500;600;700&family=Poppins:wght@400;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.task_div{
+    max-width:100vw;
+    min-height:200px;
+    padding:3% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    flex-direction: column;
+}
+
+.heading p{
+    font-size: 24px;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 500;
+    display: inline-flex;
+}
+
+.title{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.icon{
+    line-height: 80px;
+    font-size: 4rem;
+    vertical-align: top;
+}
+
+.calc_outer{
+    flex-direction:column ;
+}
+
+.calc_div{
+    height:400px;
+    width:500px;
+    background-color: #fffbe6;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.calc_div p{
+    max-width: 150px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.calc{
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding-bottom:50px;
+    padding:2% 2%;
+}
+
+.calc_input{
+    height:30px;
+    width:150px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    padding:2px 5px;
+}
+
+#colour_btn{
+  background-color: #000000;
+  border-radius: 5px;
+  border:none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 700;
+  min-height: 80px;
+  min-width: 200px;
+  padding: 16px 20px;
+  text-align: center;
+  vertical-align: top;
+}
+
+#alert_btn{
+    background-color: #ff0000;
+    border-radius: 4px;
+    border:none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: 700;
+    min-height: 80px;
+    min-width: 200px;
+    padding: 16px 20px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.calc_add{
+    background-color: #e6063a;
+    border-radius: 16px;
+    border:none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    height: 56px;
+    width: 120px;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow:0 5px #5e0129;
+    margin:15% 0;
+}
+
+.calc_add:active{
+    translate: 0 5px;
+    box-shadow: 0 0;
+}
+
+label{
+    font-size: 20px;
+}
