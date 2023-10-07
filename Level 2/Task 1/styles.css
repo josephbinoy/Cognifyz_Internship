@@ -1,0 +1,29 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+img{
+    object-fit: cover;
+}
+
+.hub{
+  background-color: rgb(244, 244, 244);
+}
+
+/*
+I know it is bad practice to use multiple frameworks in the same webpage, 
+however in order to satisfy task requirements and avoid creating separate webpages, I have used them both here.
+
+Bulma for cards, Bootstrap for grid.
+
+Both happen to have a "card" class, but Bulma card gets preference as I have placed the link after Bootstrap in the head.
+You can confirm by inspecting element.
+
+Note: Bulma does not have a grid class.
+*/
+
