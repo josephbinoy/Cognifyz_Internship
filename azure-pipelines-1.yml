@@ -1,0 +1,39 @@
+trigger:
+  - main
+
+pool:
+  name: DevOpsAgent
+
+stages:
+  - stage: DeployToStaging
+    displayName: 'Deploy to Staging (Preview)'
+    jobs:
+      - job: Staging
+        displayName: 'Deploy to Staging'
+
+        steps:
+          - checkout: self
+            submodules: true
+          - task: AzureStaticWebApp@0
+            inputs:
+              app_location: '/Level 2/Task 2/'
+              azure_static_web_apps_api_token: $(azure_deploy_token)
+              deployment_environment: "release"
+
+  - stage: DeployToProduction
+    displayName: 'Deploy to Production'
+
+    jobs:
+      - deployment: DeployToProduction
+        displayName: 'Deploy to Production'
+        environment: 'Production'
+        strategy:
+         runOnce:
+          deploy:
+            steps:
+              - checkout: self
+                submodules: true
+              - task: AzureStaticWebApp@0
+                inputs:
+                  app_location: '/Level 2/Task 2/'
+                  azure_static_web_apps_api_token: $(azure_deploy_token)
